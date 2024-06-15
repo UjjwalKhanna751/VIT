@@ -11,7 +11,7 @@
     <EditText
         android:id="@+id/editTextText"
         android:textColor="@color/MyColour"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/mydimensions"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginTop="63dp"
@@ -23,7 +23,7 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/mydimensions"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="27dp"
@@ -36,7 +36,7 @@
     <Button
         android:id="@+id/button"
         android:textColor="#FF5722"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="63dp"
