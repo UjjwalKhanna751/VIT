@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">VIT</string>
+    <string name="hint_entername">enter username</string>
+    <string name="hint_enterpin">enter pin</string>
+    <string name="hintlogin">Login</string>
+
 </resources>
