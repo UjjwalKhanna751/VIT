@@ -2,22 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#97E4ED"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#97E4ED"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTextText"
-        android:textColor="@color/MyColour"
         android:layout_width="@dimen/mydimensions"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginTop="63dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="@string/hint_entername"
+        android:inputType="text"
+        android:textColor="@color/MyColour"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,20 +27,32 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="27dp"
-        android:hint="@string/hint_enterpin"
         android:ems="10"
+        android:hint="@string/hint_enterpin"
         android:inputType="numberPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <Button
         android:id="@+id/button"
-        android:textColor="#FF5722"
-        android:layout_width="100dp"
+        android:onClick="myClickHandler"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="63dp"
         android:text="@string/hintlogin"
+        android:textColor="#FF5722"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="cancel"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
