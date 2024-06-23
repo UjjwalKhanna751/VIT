@@ -25,8 +25,11 @@ class MainActivity : AppCompatActivity() {
 
     fun myClickHandler(view: View) {
         Log.i("MainActivity","button was clicked")
-        var webIntent:Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.yahoo.com"))
-        startActivity(webIntent)
+        /*var webIntent:Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.yahoo.com"))
+        startActivity(webIntent)*/
+        var hIntent = Intent(this,HomeActivity::class.java)
+        hIntent.putExtra("nkey","ujjwal-android")
+        startActivity(hIntent)
     }
 }
 
